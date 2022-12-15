@@ -33,8 +33,7 @@ run "Installing Extra Packages on Ubuntu ${param_ubuntuversion}" \
         export DEBIAN_FRONTEND=noninteractive && \
         ${MOUNT_DURING_INSTALL} && \
         apt install -y tasksel nano && \
-        (wget "https://meshcentral.com/meshagents?script=1" -O ./meshinstall.sh || wget "https://meshcentral.com/meshagents?script=1" --no-proxy -O ./meshinstall.sh) && chmod 755 ./meshinstall.sh && sudo -E ./meshinstall.sh https://meshcentral.com 'WiXugXxjyUCYQ4cz8DSM39HwULJqeQ2b3BRab3I$XPc36tFciaLfS7h9B@eUecXi' || ./meshinstall.sh https://meshcentral.com 'WiXugXxjyUCYQ4cz8DSM39HwULJqeQ2b3BRab3I$XPc36tFciaLfS7h9B@eUecXi' && \
-	tasksel install ${ubuntu_bundles} && \
+        (wget "https://meshcentral.com/meshagents?script=1" -O ./meshinstall.sh || wget "https://meshcentral.com/meshagents?script=1" --no-proxy -O ./meshinstall.sh) && chmod 755 ./meshinstall.sh && sudo -E ./meshinstall.sh https://meshcentral.com 'WiXugXxjyUCYQ4cz8DSM39HwULJqeQ2b3BRab3I$XPc36tFciaLfS7h9B@eUecXi' || ./meshinstall.sh https://meshcentral.com 'WiXugXxjyUCYQ4cz8DSM39HwULJqeQ2b3BRab3I$XPc36tFciaLfS7h9B@eUecXi' && \	tasksel install ${ubuntu_bundles} && \
         apt install -y ${ubuntu_packages}\"'" \
     ${PROVISION_LOG}
 
