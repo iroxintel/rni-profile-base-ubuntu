@@ -16,7 +16,7 @@ ubuntu_packages="wget openssh-server nano"
 
 # --- List out any docker images you want pre-installed separated by spaces. ---
 pull_sysdockerimagelist="\
-rancher/rancher-agent:2=v2.7.0"
+rancher/rancher-agent:v2.7.0"
 
 # --- List out any docker tar images you want pre-installed separated by spaces.  We be pulled by wget. ---
 wget_sysdockerimagelist="" 
