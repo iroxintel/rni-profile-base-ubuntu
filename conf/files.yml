@@ -1,0 +1,20 @@
+---
+
+# Copyright (C) 2019 Intel Corporation
+# SPDX-License-Identifier: BSD-3-Clause
+  
+# Items in 'build' will run the 'execute' line inside the container.  The results of the build process should be saved at /opt/output inside the container and 
+# these files will be accessible at
+# http://{RNI_IP}/files/{PROFILE_NAME}/build/*
+# Example URL with below values:
+#     http://192.168.1.10/files/Clear-Linux/build/*
+
+build:
+  # Identify the container to run the build process in
+  - container: docker:stable
+    # Entrypoint of override, this is optional
+    entrypoint: ""
+    # Interrupter to use for execution
+    cmd: sh -c
+    # Script to run from the /build/ folder
+    execute: start.sh
