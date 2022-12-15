@@ -33,7 +33,7 @@ run "Installing Extra Packages on Ubuntu ${param_ubuntuversion}" \
         export DEBIAN_FRONTEND=noninteractive && \
         ${MOUNT_DURING_INSTALL} && \
         apt install -y tasksel nano && \
-	docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run  rancher/rancher-agent:v2.7.0 --server https://192.168.0.107 --token xrxrk4745pttcqzmh5vg7lp7ltmk5gsn94d7fkvtfmzwf9x7n8qqzr --ca-checksum aabbcdf21344c4e7376647df8ad6843c576740ef4919329d32367ed06e007987 --worker && \
+	#docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run  rancher/rancher-agent:v2.7.0 --server https://192.168.0.107 --token xrxrk4745pttcqzmh5vg7lp7ltmk5gsn94d7fkvtfmzwf9x7n8qqzr --ca-checksum aabbcdf21344c4e7376647df8ad6843c576740ef4919329d32367ed06e007987 --worker && \
         tasksel install ${ubuntu_bundles} && \
         apt install -y ${ubuntu_packages}\"'" \
     ${PROVISION_LOG}
