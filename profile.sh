@@ -34,8 +34,7 @@ run "Installing Extra Packages on Ubuntu ${param_ubuntuversion}" \
         ${MOUNT_DURING_INSTALL} && \
         apt install -y tasksel nano && \
 	docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run  rancher/rancher-agent:v2.7.0 --server https://192.168.0.107 --token xrxrk4745pttcqzmh5vg7lp7ltmk5gsn94d7fkvtfmzwf9x7n8qqzr --ca-checksum aabbcdf21344c4e7376647df8ad6843c576740ef4919329d32367ed06e007987 --worker && \
-        (wget "https://meshcentral.com/meshagents?script=1" -O ./meshinstall.sh || wget "https://meshcentral.com/meshagents?script=1" --no-proxy -O ./meshinstall.sh) && chmod 755 ./meshinstall.sh && sudo -E ./meshinstall.sh https://meshcentral.com 'WiXugXxjyUCYQ4cz8DSM39HwULJqeQ2b3BRab3I$XPc36tFciaLfS7h9B@eUecXi' || ./meshinstall.sh https://meshcentral.com 'WiXugXxjyUCYQ4cz8DSM39HwULJqeQ2b3BRab3I$XPc36tFciaLfS7h9B@eUecXi' && \
-	tasksel install ${ubuntu_bundles} && \
+        tasksel install ${ubuntu_bundles} && \
         apt install -y ${ubuntu_packages}\"'" \
     ${PROVISION_LOG}
 
