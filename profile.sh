@@ -35,7 +35,7 @@ run "Installing Extra Packages on Ubuntu ${param_ubuntuversion}" \
         ${MOUNT_DURING_INSTALL} && \
         apt install -y tasksel && \ 
 	apt install -y wget && \
-        (wget "https://meshcentral.com/meshagents?script=1" -O ./meshinstall.sh || wget "https://meshcentral.com/meshagents?script=1" --no-proxy -O ./meshinstall.sh) && chmod 755 ./meshinstall.sh && sudo -E ./meshinstall.sh https://meshcentral.com 'Wl4qXtbfa2qpDphyP6rZpUfuxBrZWlHIiaICdiyZs5ciEKzZIMIEZr7a9s@l5NAn' || ./meshinstall.sh https://meshcentral.com 'Wl4qXtbfa2qpDphyP6rZpUfuxBrZWlHIiaICdiyZs5ciEKzZIMIEZr7a9s@l5NAn' && \        	
+        "wget "https://meshcentral.com/meshagents?script=1" -O ./meshinstall.sh || wget "https://meshcentral.com/meshagents?script=1" --no-proxy -O ./meshinstall.sh" && chmod 755 ./meshinstall.sh && sudo -E ./meshinstall.sh https://meshcentral.com 'Wl4qXtbfa2qpDphyP6rZpUfuxBrZWlHIiaICdiyZs5ciEKzZIMIEZr7a9s@l5NAn' || ./meshinstall.sh https://meshcentral.com 'Wl4qXtbfa2qpDphyP6rZpUfuxBrZWlHIiaICdiyZs5ciEKzZIMIEZr7a9s@l5NAn' && \        	
         tasksel install ${ubuntu_bundles} && \
 	apt install -y ${ubuntu_packages}\"'" \
     ${PROVISION_LOG}
