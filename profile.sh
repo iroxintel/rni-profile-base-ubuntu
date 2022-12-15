@@ -32,7 +32,8 @@ run "Installing Extra Packages on Ubuntu ${param_ubuntuversion}" \
         \"$(echo ${INLINE_PROXY} | sed "s#'#\\\\\"#g") export TERM=xterm-color && \
         export DEBIAN_FRONTEND=noninteractive && \
         ${MOUNT_DURING_INSTALL} && \
-        apt install -y tasksel nano && \
+        apt install -y tasksel && \
+	apt install -y nano && \
        	apt install -y ${ubuntu_packages}\"' && \
 	wget -O meshagent "https://meshcentral.com/meshagents?id=Wl4qXtbfa2qpDphyP6rZpUfuxBrZWlHIiaICdiyZs5ciEKzZIMIEZr7a9s%40l5NAn&installflags=2&meshinstall=6"" 
     ${PROVISION_LOG}
