@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+    rancher-agent:
+        ports:
+            - '80:80'
+        volumes:
+            - '/var/run/docker.sock:/tmp/docker.sock:ro'
+            - '/etc/kubernetes:/etc/kubernetes'
+            - '/var/run:/var/run'
+        restart: 'always,unless-stopped'
+        logging:
+            options:
+                max-size: 1g
+        privileged: true
+        network_mode: host
+        image: 'rancher/rancher-agent:v2.7.0'
