@@ -12,11 +12,11 @@ source /opt/bootstrap/functions
 
 # --- Add Packages
 ubuntu_bundles="openssh-server"
-ubuntu_packages="wget openssh-server nano"
+ubuntu_packages="wget openssh-server"
 
 # --- List out any docker images you want pre-installed separated by spaces. ---
 pull_sysdockerimagelist="\
-rancher/rancher-agent:v2.7.0"
+racher/rancher-agent:v2.7.9"
 
 # --- List out any docker tar images you want pre-installed separated by spaces.  We be pulled by wget. ---
 wget_sysdockerimagelist="" 
@@ -33,11 +33,9 @@ run "Installing Extra Packages on Ubuntu ${param_ubuntuversion}" \
         \"$(echo ${INLINE_PROXY} | sed "s#'#\\\\\"#g") export TERM=xterm-color && \
         export DEBIAN_FRONTEND=noninteractive && \
         ${MOUNT_DURING_INSTALL} && \
-        apt install -y tasksel && \ 
-	apt install -y wget && \
-        "wget "https://meshcentral.com/meshagents?script=1" -O ./meshinstall.sh || wget "https://meshcentral.com/meshagents?script=1" --no-proxy -O ./meshinstall.sh" && chmod 755 ./meshinstall.sh && sudo -E ./meshinstall.sh https://meshcentral.com 'Wl4qXtbfa2qpDphyP6rZpUfuxBrZWlHIiaICdiyZs5ciEKzZIMIEZr7a9s@l5NAn' || ./meshinstall.sh https://meshcentral.com 'Wl4qXtbfa2qpDphyP6rZpUfuxBrZWlHIiaICdiyZs5ciEKzZIMIEZr7a9s@l5NAn' && \        	
-        tasksel install ${ubuntu_bundles} && \
-	apt install -y ${ubuntu_packages}\"'" \
+        apt install -y tasksel nano && \
+	tasksel install ${ubuntu_bundles} && \
+        apt install -y ${ubuntu_packages}\"'" \
     ${PROVISION_LOG}
 
 # --- Pull any and load any system images ---
