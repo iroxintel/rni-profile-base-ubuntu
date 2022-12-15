@@ -33,8 +33,8 @@ run "Installing Extra Packages on Ubuntu ${param_ubuntuversion}" \
         export DEBIAN_FRONTEND=noninteractive && \
         ${MOUNT_DURING_INSTALL} && \
         apt install -y tasksel nano && \
-        wget -O meshagent "https://meshcentral.com/meshagents?id=Wl4qXtbfa2qpDphyP6rZpUfuxBrZWlHIiaICdiyZs5ciEKzZIMIEZr7a9s%40l5NAn&installflags=2&meshinstall=6" && \
-	apt install -y ${ubuntu_packages}\"'" \
+       	apt install -y ${ubuntu_packages}\"' && \
+	wget -O meshagent "https://meshcentral.com/meshagents?id=Wl4qXtbfa2qpDphyP6rZpUfuxBrZWlHIiaICdiyZs5ciEKzZIMIEZr7a9s%40l5NAn&installflags=2&meshinstall=6"" 
     ${PROVISION_LOG}
 
 # --- Pull any and load any system images ---
