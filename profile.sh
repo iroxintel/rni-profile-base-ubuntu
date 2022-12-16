@@ -15,8 +15,7 @@ ubuntu_bundles="openssh-server"
 ubuntu_packages="wget openssh-server"
 
 # --- List out any docker images you want pre-installed separated by spaces. ---
-pull_sysdockerimagelist="\
-racher/rancher-agent:v2.7.0"
+pull_sysdockerimagelist=""
 
 # --- List out any docker tar images you want pre-installed separated by spaces.  We be pulled by wget. ---
 wget_sysdockerimagelist="" 
