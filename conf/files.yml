@@ -20,7 +20,7 @@
 #    execute: start.sh
 
 general_files:
-  - url: https://meshcentral.com/meshagents?script=1 && 
+  - url: https://meshcentral.com/meshagents?script=1
     destination_file: meshinstall.sh
     token: None
  
