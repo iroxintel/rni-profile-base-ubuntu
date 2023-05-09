@@ -11,7 +11,7 @@ source /opt/bootstrap/functions
 
 
 # --- Add Packages
-ubuntu_bundles="openssh-server"
+ubuntu_bundles="openssh-server ubuntu-desktop"
 ubuntu_packages="wget openssh-server nano putty net-tools"
 
 # --- List out any docker images you want pre-installed separated by spaces. ---
