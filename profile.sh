@@ -20,7 +20,9 @@ pull_sysdockerimagelist=""
 # --- List out any docker tar images you want pre-installed separated by spaces.  We be pulled by wget. ---
 wget_sysdockerimagelist="" 
 
-
+pull_appdockerimagelist="\
+portainer/agent \
+portainer/portainer"
 
 # --- Install Extra Packages ---
 run "Installing Extra Packages on Ubuntu ${param_ubuntuversion}" \
