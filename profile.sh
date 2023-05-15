@@ -18,8 +18,8 @@ ubuntu_packages="wget openssh-server nano putty net-tools"
 pull_sysdockerimagelist=""
 
 # --- List out any docker tar images you want pre-installed separated by spaces.  We be pulled by wget. ---
-wget_sysdockerimagelist="http://${PROVISIONER}${param_httppath}/build/py-torch-2.tar.gz \
-" 
+#wget_sysdockerimagelist="http://${PROVISIONER}${param_httppath}/build/py-torch-2.tar.gz \
+#" 
 
 pull_appdockerimagelist="\
 portainer/agent \
