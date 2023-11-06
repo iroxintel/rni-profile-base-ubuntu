@@ -15,7 +15,7 @@ ubuntu_bundles="openssh-server"
 ubuntu_packages="wget openssh-server nano"
 
 # --- List out any docker images you want pre-installed separated by spaces. ---
-pull_sysdockerimagelist="dynatrace/dynatrace-oneagent"
+pull_sysdockerimagelist=""
 
 # --- List out any docker tar images you want pre-installed separated by spaces.  We be pulled by wget. ---
 wget_sysdockerimagelist="" 
