@@ -11,7 +11,7 @@ source /opt/bootstrap/functions
 
 
 # --- Add Packages
-ubuntu_packages="wget openssh-server"
+ubuntu_packages="wget openssh-server nano make"
 
 # --- List out any docker images you want pre-installed separated by spaces. ---
 pull_sysdockerimagelist=""
