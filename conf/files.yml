@@ -15,13 +15,13 @@ general_files:
   - url: http://@@EDGEBUILDER_IP@@/files/
     destination_file: scenescape_2023.3-alpha.tar.gz
     token: None
-  - url: http://http://@@EDGEBUILDER_IP@@/files/
+  - url: http://@@EDGEBUILDER_IP@@/files/
     destination_file: scenescape-ovcv_2023.3-alpha.tar.gz
     token: None
-  - url: http://http://@@EDGEBUILDER_IP@@/files/
+  - url: http://@@EDGEBUILDER_IP@@/files/
     destination_file: scenescape-broker_2023.3-alpha.tar.gz
     token: None
-  - url: http://http://@@EDGEBUILDER_IP@@/files/
+  - url: http://@@EDGEBUILDER_IP@@/files/
     destination_file: scenescape-interface_2023.3-alpha.tar.gz
     token: None
 
