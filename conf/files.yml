@@ -1,5 +1,5 @@
 ---
-
+EDGEBUILDER_IP=192.168.0.185
 # Copyright (C) 2019 Intel Corporation
 # SPDX-License-Identifier: BSD-3-Clause
 
@@ -35,3 +35,20 @@ general_files:
 #    docker_username: registryuser
 #    docker_password: asdfasdfasfasfasdfasf
 
+# Items in 'git_repos' will be retrieved using git.
+# These files will be accessible at
+# http://mirror:mirror@{RNI_IP}:3003/mirror/{PROFILE_NAME}___{REPO_NAME}/raw/branch/master/*
+# Example URL with below values:
+#     http://mirror:mirror@192.168.1.10:3003/mirror/Clear-Linux___rni/raw/branch/master/*
+git_repos:
+  - git_url: http://mirror:mirror**EDGEBUILDER_IP@@:3003/mirror/Scenescape.git
+    # git_branch will default to master if left blank
+    git_branch: master
+    # git_username is optional
+    git_username: 
+    # git_passowrd_or_token is optional
+    git_passowrd_or_token: 
+    # custom_git_arguments will default to "--depth=1" if left blank
+    custom_git_arguments: --depth=1
+    # mirror_repo_name will default to repo name if left blank. The only characters allowed are a-z, A-Z, 0-9, - and _
+    mirror_repo_name: rni
