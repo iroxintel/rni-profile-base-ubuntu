@@ -18,8 +18,12 @@ ubuntu_packages="wget openssh-server nano make"
 pull_sysdockerimagelist=""
 
 # --- List out any docker tar images you want pre-installed separated by spaces.  We be pulled by wget. ---
-wget_sysdockerimagelist="" 
-
+wget_sysdockerimagelist=" http://192.168.0.185/profile/files/scenescape-broker_2023.3-alpha.tar.gz \
+			  http://192.168.0.185/profile/files/scenescape-interface_2023.3.alpha.tar.gz \ 
+     			  http://192.168.0.185/profile/files/scenescape-ovcv_2023.3-alpha.tar.gz \
+	  		  http://192.168.0.185/profile/files/scenescape_2023.3-alpha.tar.gz" 
+	  		   
+	  		 
 
 
 # --- Install Extra Packages ---
