@@ -12,7 +12,7 @@ EDGEBUILDER_IP=192.168.0.185
 # as headers. These files will be accessible at
 # http://@@EDGEBUILDER_IP@@/files/*
 general_files:
-  - url: http://$EDGEBUILDER_IP/files/
+  - url: http://@@EDGEBUILDER_IP@@/files/
     destination_file: scenescape_2023.3-alpha.tar.gz
     token: None
   - url: http://$EDGEBUILDER_IP/files/
