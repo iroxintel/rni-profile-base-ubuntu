@@ -50,4 +50,4 @@ git_repos:
     # custom_git_arguments will default to "--depth=1" if left blank
     custom_git_arguments: --depth=1
     # mirror_repo_name will default to repo name if left blank. The only characters allowed are a-z, A-Z, 0-9, - and _
-    mirror_repo_name: rni
+    mirror_repo_name: 
