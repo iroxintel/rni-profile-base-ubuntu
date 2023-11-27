@@ -12,7 +12,7 @@ source /opt/bootstrap/functions
 
 # --- Add Packages
 ubuntu_bundles="ubuntu-desktop"
-ubuntu_packages="wget openssh-server nano make"
+ubuntu_packages="wget openssh-server nano make rsync"
 
 # --- List out any docker images you want pre-installed separated by spaces. ---
 pull_sysdockerimagelist=""
