@@ -42,7 +42,7 @@ general_files:
 git_repos:
   - git_url: http://mirror:mirror@192.168.0.185:3003/mirror/Scenescape.git
     # git_branch will default to master if left blank
-    git_branch: master
+    git_branch: main
     # git_username is optional
     git_username: 
     # git_passowrd_or_token is optional
