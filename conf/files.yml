@@ -1,4 +1,4 @@
----
+1---
 EDGEBUILDER_IP=192.168.0.185
 # Copyright (C) 2019 Intel Corporation
 # SPDX-License-Identifier: BSD-3-Clause
@@ -12,16 +12,16 @@ EDGEBUILDER_IP=192.168.0.185
 # as headers. These files will be accessible at
 # http://@@EDGEBUILDER_IP@@/files/*
 general_files:
-  - url: http://@@EDGEBUILDER_IP@@/files/
+  - url: http://$EDGEBUILDER_IP/files/
     destination_file: scenescape_2023.3-alpha.tar.gz
     token: None
-  - url: http://@@EDGEBUILDER_IP@@/files/
+  - url: http://$EDGEBUILDER_IP/files/
     destination_file: scenescape-ovcv_2023.3-alpha.tar.gz
     token: None
-  - url: http://@@EDGEBUILDER_IP@@/files/
+  - url: http://$EDGEBUILDER_IP/files/
     destination_file: scenescape-broker_2023.3-alpha.tar.gz
     token: None
-  - url: http://@@EDGEBUILDER_IP@@/files/
+  - url: http://$EDGEBUILDER_IP/files/
     destination_file: scenescape-interface_2023.3-alpha.tar.gz
     token: None
 
@@ -41,7 +41,7 @@ general_files:
 # Example URL with below values:
 #     http://mirror:mirror@192.168.1.10:3003/mirror/Clear-Linux___rni/raw/branch/master/*
 git_repos:
-  - git_url: http://mirror:mirror**EDGEBUILDER_IP@@:3003/mirror/Scenescape.git
+  - git_url: http://mirror:mirror@$EDGEBUILDER_IP:3003/mirror/Scenescape.git
     # git_branch will default to master if left blank
     git_branch: master
     # git_username is optional
