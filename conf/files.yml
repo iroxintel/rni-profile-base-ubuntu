@@ -1,5 +1,5 @@
 ---
-EDGEBUILDER_IP=192.168.0.185
+@@EDGEBUILDER_IP@@=192.168.0.185
 # Copyright (C) 2019 Intel Corporation
 # SPDX-License-Identifier: BSD-3-Clause
 
