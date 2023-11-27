@@ -11,16 +11,16 @@
 # as headers. These files will be accessible at
 # http://@@EDGEBUILDER_IP@@/files/*
 general_files:
-  - url: http://192.168.0.185/files/
+  - url: http://192.168.0.185/profile/files/
     destination_file: scenescape_2023.3-alpha.tar.gz
     token: None
-  - url: http://192.168.0.185/files/
+  - url: http://192.168.0.185/profile/files/
     destination_file: scenescape-ovcv_2023.3-alpha.tar.gz
     token: None
-  - url: http://192.168.0.185/files/
+  - url: http://192.168.0.185/profile/files/
     destination_file: scenescape-broker_2023.3-alpha.tar.gz
     token: None
-  - url: http://192.168.0.185/files/
+  - url: http://192.168.0.185/profile/files/
     destination_file: scenescape-interface_2023.3-alpha.tar.gz
     token: None
 
