@@ -32,7 +32,7 @@ run "Installing Extra Packages on Ubuntu ${param_ubuntuversion}" \
         export DEBIAN_FRONTEND=noninteractive && \
         ${MOUNT_DURING_INSTALL} && \
         apt install -y ${ubuntu_packages}\"'" && \
-	wget -O - https://get.k3s.io | sh - \
+	wget -O - https://get.k3s.io | INSTALL_K3S_VERSION=v1.25.11+k3s1 INSTALL_K3S_EXEC="--disable traefik" sh -s \
     ${PROVISION_LOG}
 
 # --- Pull any and load any system images ---
